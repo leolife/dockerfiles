@@ -1,0 +1,28 @@
+{
+    "log": {
+        "access": "/var/log/v2ray/access.log",
+        "error": "/var/log/v2ray/error.log",
+        "loglevel": "warning"
+    },
+    "inbounds": [
+        {
+            "port": 8000,
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "354b5a02-41b6-11e9-a88c-208984ffe5d2",
+                        "level": 1,
+                        "alterId": 64
+                    }
+                ]
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom",
+            "settings": {}
+        }
+    ]
+}
