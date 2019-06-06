@@ -1,8 +1,8 @@
-ARG GO_VERSION=1.12
+ARG GO_VERSION=1.12.5
 
 FROM golang:${GO_VERSION}-alpine as builder
 
-ENV V2RAY_VERSION=v4.18.0
+ENV V2RAY_VERSION=v4.19.1
 ENV CGO_ENABLED=0
 
 RUN apk add --no-cache ca-certificates git tzdata
